@@ -1,0 +1,9 @@
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\bin\Release\CremiaViewModelTests.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\bin\Release\CremiaViewModelTests.pdb
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\bin\Release\CremiaViewModel.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\bin\Release\CremiaViewModel.pdb
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\bin\Release\ja\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\obj\Release\CremiaViewModelTests.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\obj\Release\CremiaViewModelTests.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModelTests\obj\Release\CremiaViewModelTests.pdb

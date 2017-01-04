@@ -1,0 +1,8 @@
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\bin\CremiaWeb.dll.config
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\bin\CremiaWeb.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\bin\CremiaWeb.pdb
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\bin\CremiaViewModel.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\bin\CremiaViewModel.pdb
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\obj\Release\CremiaWeb.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\obj\Release\CremiaWeb.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaWeb\obj\Release\CremiaWeb.pdb

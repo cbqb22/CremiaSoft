@@ -1,0 +1,15 @@
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\bin\Release\CremiaSoft.exe.config
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\bin\Release\CremiaSoft.exe
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\bin\Release\CremiaSoft.pdb
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\bin\Release\CremiaViewModel.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\bin\Release\CremiaViewModel.pdb
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\CremiaView.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\MainWindow.baml
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\MainWindow.g.cs
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\App.g.cs
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\CremiaSoft_MarkupCompile.cache
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\CremiaSoft.g.resources
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\CremiaSoft.Properties.Resources.resources
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\CremiaView.csproj.GenerateResource.Cache
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\CremiaSoft.exe
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaSoft\obj\Release\CremiaSoft.pdb

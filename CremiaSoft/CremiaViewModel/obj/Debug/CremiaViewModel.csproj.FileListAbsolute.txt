@@ -1,0 +1,5 @@
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModel\bin\Debug\CremiaViewModel.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModel\bin\Debug\CremiaViewModel.pdb
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModel\obj\Debug\CremiaViewModel.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModel\obj\Debug\CremiaViewModel.dll
+C:\Users\poohace\Documents\Visual Studio 2013\Projects\CremiaSoft\CremiaViewModel\obj\Debug\CremiaViewModel.pdb

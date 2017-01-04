@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CremiaView", "CremiaSoft\CremiaView.csproj", "{9A563C4A-65BE-4D3A-9CF5-02CA1A252749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CremiaViewModel", "CremiaViewModel\CremiaViewModel.csproj", "{ED190C4F-E843-42F1-87B1-84DD4B13984C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CremiaWeb", "CremiaWeb\CremiaWeb.csproj", "{BB3B4A44-95AF-41BD-962E-0C9A7B084505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CremiaViewModelTests", "CremiaViewModelTests\CremiaViewModelTests.csproj", "{D36BC95D-01B1-4684-B1AD-B14A97207A5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A563C4A-65BE-4D3A-9CF5-02CA1A252749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A563C4A-65BE-4D3A-9CF5-02CA1A252749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A563C4A-65BE-4D3A-9CF5-02CA1A252749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A563C4A-65BE-4D3A-9CF5-02CA1A252749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED190C4F-E843-42F1-87B1-84DD4B13984C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED190C4F-E843-42F1-87B1-84DD4B13984C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED190C4F-E843-42F1-87B1-84DD4B13984C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED190C4F-E843-42F1-87B1-84DD4B13984C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3B4A44-95AF-41BD-962E-0C9A7B084505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3B4A44-95AF-41BD-962E-0C9A7B084505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3B4A44-95AF-41BD-962E-0C9A7B084505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3B4A44-95AF-41BD-962E-0C9A7B084505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36BC95D-01B1-4684-B1AD-B14A97207A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36BC95D-01B1-4684-B1AD-B14A97207A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36BC95D-01B1-4684-B1AD-B14A97207A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36BC95D-01B1-4684-B1AD-B14A97207A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
