@@ -32,14 +32,16 @@ namespace CremiaView.UI.Printing
         private bool _PrintFlag;
         private UIElement _uielement;
         private MemoryStream packageStream;
+        private string _SaveFolderPath;
 
 
         Canvas printCanvas;
 
-        public PrintCenter(UIElement ui, bool printFlag)
+        public PrintCenter(UIElement ui, bool printFlag, string saveFolderPath)
         {
             try
             {
+                this._SaveFolderPath = saveFolderPath;
                 this._PrintFlag = printFlag;
 
                 this._uielement = ui;
@@ -91,7 +93,8 @@ namespace CremiaView.UI.Printing
             PngBitmapEncoder png = new PngBitmapEncoder();
             png.Frames.Add(BitmapFrame.Create(bmp));
 
-            string dir = @"C:\Users\poohace\Pictures\謎解き\ペントミノ問題" + (_PrintFlag ? "" : @"保存");
+            string dir = _SaveFolderPath + (_PrintFlag ? "" : @"保存");
+            //string dir = @"C:\Users\poohace\Pictures\謎解き\ペントミノ問題" + (_PrintFlag ? "" : @"保存");
 
             if (!Directory.Exists(dir))
             {
@@ -280,7 +283,9 @@ namespace CremiaView.UI.Printing
         {
             FixedDocument fixedDocument = new FixedDocument();
             fixedDocument.DocumentPaginator.PageSize
-                                                      = new Size(96 * 8.5, 96 * 11);
+                                                      = new Size(printCanvas.Width, printCanvas.Height);
+            //fixedDocument.DocumentPaginator.PageSize
+            //                                          = new Size(96 * 8.5, 96 * 11);
             //---------------------------------------------
             PageContent pageContent = CreateFixedPageFromCanvas();
             //ここで《コード：２》が使われる

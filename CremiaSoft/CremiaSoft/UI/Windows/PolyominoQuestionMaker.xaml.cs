@@ -26,6 +26,9 @@ namespace CremiaSoft.UI.Windows
     /// </summary>
     public partial class PolyominoQuestionMaker : Window
     {
+
+        private const string polyominoSaveFolderPath = @"C:\Users\poohace\Pictures\謎解き\ペントミノ問題";
+
         public PolyominoQuestionMaker()
         {
             InitializeComponent();
@@ -34,7 +37,51 @@ namespace CremiaSoft.UI.Windows
 
         private void PolyominoQuestionMaker_Loaded(object sender, RoutedEventArgs e)
         {
+            SaveImages();
             SetPolyomino(Make());
+        }
+
+        private void SaveImages()
+        {
+
+            string saveFolderPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "NumImages\\" + DateTime.Now.ToString("yyyyMMddHHmmss"));
+
+
+            //InstalledFontCollectionオブジェクトの取得
+            System.Drawing.Text.InstalledFontCollection ifc =
+                new System.Drawing.Text.InstalledFontCollection();
+            //インストールされているすべてのフォントファミリアを取得
+
+            var ffs = ifc.Families;
+            var fontNames = ffs.ToList().Select(x => x.Name).ToList();
+
+
+            Enumerable.Range(0, 9).ToList().ForEach(num =>
+            {
+                var folder = System.IO.Path.Combine(saveFolderPath, num.ToString());
+
+                if (!System.IO.Directory.Exists(folder))
+                    System.IO.Directory.CreateDirectory(folder);
+
+                int counter = 0;
+
+                
+                counter++;
+                tblNumber.Text = num.ToString();
+                tblNumber.FontFamily = new System.Windows.Media.FontFamily("MS UI Gothic");
+                Print(false, cvNumber, folder);
+
+                //fontNames.ForEach(x =>
+                //{
+                //    counter++;
+                //    tblNumber.Text = num.ToString();
+                //    tblNumber.FontFamily = new System.Windows.Media.FontFamily(x);
+
+                //    Print(false, cvNumber, polyominoSaveFolderPath);
+                //});
+            });
+
+
         }
 
         public PolyominoSet Make()
@@ -145,11 +192,11 @@ namespace CremiaSoft.UI.Windows
         {
 
             //PrintSinglePage();
-            Print(true,cRoot);
+            Print(true, cRoot, polyominoSaveFolderPath);
         }
 
 
-        private void Print(bool printFlag,Canvas canvas)
+        private void Print(bool printFlag, Canvas canvas, string saveFolderPath)
         {
             try
             {
@@ -157,7 +204,7 @@ namespace CremiaSoft.UI.Windows
                 Canvas c = canvas;
                 var container = VisualTreeHelper.GetParent(c) as FrameworkElement;
 
-                if(container is Grid == false)
+                if (container is Grid == false)
                 {
                     return;
                 }
@@ -165,7 +212,7 @@ namespace CremiaSoft.UI.Windows
                 grid.Children.Remove(canvas);
                 grid.Children.Clear();
 
-                PrintCenter pc = new PrintCenter(c, printFlag);
+                PrintCenter pc = new PrintCenter(c, printFlag, saveFolderPath);
 
                 // 印刷UIを解放する
                 if (pc != null)
@@ -185,7 +232,7 @@ namespace CremiaSoft.UI.Windows
 
         private void btnSaveToImage_Click(object sender, RoutedEventArgs e)
         {
-            Print(false, cRoot);
+            Print(false, cRoot, polyominoSaveFolderPath);
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -205,7 +252,7 @@ namespace CremiaSoft.UI.Windows
             {
                 counter++;
 
-                int percentage = counter  * 100 / 100; // 進捗率
+                int percentage = counter * 100 / 100; // 進捗率
                 p.Report(percentage);
 
                 PolyominoSet set = null;
@@ -220,7 +267,7 @@ namespace CremiaSoft.UI.Windows
                 canvasMono.Children.Clear();
                 canvasPolyomino.Children.Clear();
                 SetPolyomino(set);
-                Print(false, cRoot);
+                Print(false, cRoot, polyominoSaveFolderPath);
 
                 //Action act = delegate ()
                 //{
@@ -248,7 +295,7 @@ namespace CremiaSoft.UI.Windows
         {
             var grid = sender as Grid;
 
-            
+
             if (((SolidColorBrush)grid.Background).Color.ToString() == Colors.Gray.ToString())
             {
                 grid.Background = new System.Windows.Media.SolidColorBrush(Colors.Transparent);
@@ -261,7 +308,7 @@ namespace CremiaSoft.UI.Windows
 
         private void btnPrint2_Click(object sender, RoutedEventArgs e)
         {
-            Print(true,canvasAnswerSheet);
+            Print(true, canvasAnswerSheet, polyominoSaveFolderPath);
         }
     }
 }
