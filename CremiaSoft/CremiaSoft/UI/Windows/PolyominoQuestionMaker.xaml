@@ -117,9 +117,7 @@
             <TabItem Header="TEMP">
                 <Grid>
                     <Canvas x:Name="cvNumber" Width="28" Height="28">
-                        <Grid x:Name="gdContainer" Width="28" Height="28">
-                            <TextBlock x:Name="tblNumber" FontSize="20" Text="1"  Background="Black" Foreground="White"  TextAlignment="Center"/>
-                        </Grid>
+                        <TextBlock x:Name="tblNumber" FontSize="20" Width="28" Height="28" Text="1"  Background="Black" Foreground="White"  TextAlignment="Center" VerticalAlignment="Stretch"/>
                         <!--<Label  Content="2" Background="Black" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" />-->
                     </Canvas>
                 </Grid>

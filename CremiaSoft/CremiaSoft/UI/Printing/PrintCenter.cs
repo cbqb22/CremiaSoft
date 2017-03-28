@@ -93,7 +93,7 @@ namespace CremiaView.UI.Printing
             PngBitmapEncoder png = new PngBitmapEncoder();
             png.Frames.Add(BitmapFrame.Create(bmp));
 
-            string dir = _SaveFolderPath + (_PrintFlag ? "" : @"保存");
+            string dir = _SaveFolderPath + (_PrintFlag ? "" : @"\\保存");
             //string dir = @"C:\Users\poohace\Pictures\謎解き\ペントミノ問題" + (_PrintFlag ? "" : @"保存");
 
             if (!Directory.Exists(dir))
@@ -324,8 +324,8 @@ namespace CremiaView.UI.Printing
             var cv = this._uielement as Canvas;
 
 
-            double pageWidth = cv.ActualWidth;
-            double pageHeight = cv.ActualHeight;
+            double pageWidth = cv.Width;
+            double pageHeight = cv.Height;
 
             _FixedPage.Width = pageWidth;
             _FixedPage.Height = pageHeight;

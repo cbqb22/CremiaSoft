@@ -56,20 +56,34 @@ namespace CremiaSoft.UI.Windows
             var fontNames = ffs.ToList().Select(x => x.Name).ToList();
 
 
+
             Enumerable.Range(0, 9).ToList().ForEach(num =>
             {
+                Canvas canvas = new Canvas() { Width = 28, Height = 28 };
+                TextBlock tbl = new TextBlock() { Width = 28, Height = 28 };
+                tbl.FontSize = 20;
+                tbl.TextAlignment = TextAlignment.Center;
+                tbl.Foreground = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Black);
+                tbl.Background = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.White);
+                tbl.Text = num.ToString();
+                //tbl.FontFamily = new System.Windows.Media.FontFamily("MS UI Gothic");
+                canvas.Children.Add(tbl);
+
+                //canvas.UpdateLayout();
+
+
                 var folder = System.IO.Path.Combine(saveFolderPath, num.ToString());
 
                 if (!System.IO.Directory.Exists(folder))
                     System.IO.Directory.CreateDirectory(folder);
 
                 int counter = 0;
-
-                
                 counter++;
+
+                Print(false, canvas, folder);
                 tblNumber.Text = num.ToString();
                 tblNumber.FontFamily = new System.Windows.Media.FontFamily("MS UI Gothic");
-                Print(false, cvNumber, folder);
+                //Print(false, cvNumber, folder);
 
                 //fontNames.ForEach(x =>
                 //{
@@ -203,14 +217,13 @@ namespace CremiaSoft.UI.Windows
 
                 Canvas c = canvas;
                 var container = VisualTreeHelper.GetParent(c) as FrameworkElement;
-
-                if (container is Grid == false)
-                {
-                    return;
-                }
                 var grid = container as Grid;
-                grid.Children.Remove(canvas);
-                grid.Children.Clear();
+
+                if (container is Grid == true)
+                {
+                    grid.Children.Remove(canvas);
+                    grid.Children.Clear();
+                }
 
                 PrintCenter pc = new PrintCenter(c, printFlag, saveFolderPath);
 
@@ -220,7 +233,8 @@ namespace CremiaSoft.UI.Windows
                     pc.RemoveFixedPageChild();
                 }
 
-                grid.Children.Add(canvas);
+                if (grid != null)
+                    grid.Children.Add(canvas);
 
             }
             catch (Exception ex)
